@@ -46,6 +46,41 @@
           8pm : General Admission. All welcome!
           <br><br>
           DONATE NOW : <a href="https://www.gofundme.com/f/503-party-2024">https://www.gofundme.com/f/503-party-2024</a>
+          <br><br>
+          <br><br>
+          <!-- Audio Player -->
+          <div class="audio-player">
+            <audio id="audio" controls loop>
+              <source src="Clipped.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <a href="Clipped.mp3" download>
+              <img src="download-icon.png" alt="Download" class="download-icon">
+            </a>
+          </div>
+          <style>
+            .audio-player {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+              margin-top: 20px;
+            }
+            .download-icon {
+              width: 24px;
+              height: 24px;
+            }
+            audio::-webkit-media-controls-panel {
+              background-color: #000;
+              color: #fff;
+            }
+            audio::-webkit-media-controls-play-button,
+            audio::-webkit-media-controls-pause-button,
+            audio::-webkit-media-controls-mute-button,
+            audio::-webkit-media-controls-volume-slider {
+              filter: invert(1);
+            }
+          </style>
           <br>
         </h3>
       </font>
