@@ -1,20 +1,109 @@
 <html>
   <head>
-    <title>503.party - DEFCON 2025</title>
+    <title>503.party - DEFCON 2026</title>
   </head>
   <style>
-    body {
-      color: #e5f2f9;
- background:
-        /* top, transparent black, faked with gradient */ 
-        linear-gradient(
-          rgba(0, 0, 0, 0.8), 
-          rgba(0, 0, 0, 0.8)
-        ),
-        /* bottom, image */
-        url(ninword.gif);
+    * {
+      box-sizing: border-box;
     }
 
+    body {
+      margin: 0;
+      color: #d7ffd2;
+      background-color: #001900;
+      background-image:
+        linear-gradient(
+          rgba(0, 0, 0, 0.74),
+          rgba(0, 20, 0, 0.82)
+        ),
+        url(frog-party-2026.png),
+        url(ninword.gif);
+      background-size: auto, cover, auto;
+      background-position: center, center top, left top;
+      background-attachment: scroll, fixed, scroll;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .frog-hero {
+      width: 95vw;
+      max-width: 980px;
+      border: 5px ridge #39ff14;
+      box-shadow:
+        0 0 22px #39ff14,
+        0 0 44px #ff00ff;
+    }
+
+    .frog-box {
+      width: 94vw;
+      max-width: 900px;
+      margin: 16px auto;
+      padding: 8px;
+      background: rgba(0, 0, 0, 0.72);
+      border: 4px double #39ff14;
+      color: #d7ffd2;
+    }
+
+    .frog-box a {
+      color: #ff5cff;
+    }
+
+    .frog-title {
+      max-width: 98vw;
+      margin: 16px 4px;
+      color: #39ff14;
+      font-size: clamp(24px, 7vw, 48px);
+      line-height: 1.1;
+      overflow-wrap: break-word;
+      text-shadow:
+        0 0 8px #39ff14,
+        0 0 18px #ff00ff,
+        3px 3px #000;
+    }
+
+    .frog-box h1 {
+      font-size: clamp(22px, 6.5vw, 34px);
+      line-height: 1.15;
+      overflow-wrap: break-word;
+    }
+
+    .frog-box h3 {
+      font-size: 16px;
+      line-height: 1.25;
+      overflow-wrap: break-word;
+    }
+
+    .slush-warning {
+      width: 98vw;
+      max-width: 98vw;
+      margin: 14px auto;
+      color: #ffff00;
+      font-size: clamp(24px, 6vw, 42px);
+      line-height: 1.05;
+      animation: slush-flash 0.42s steps(2, start) infinite;
+      text-shadow:
+        0 0 8px #ffff00,
+        0 0 16px #ff0000,
+        3px 3px #000;
+      overflow-wrap: break-word;
+    }
+
+    @keyframes slush-flash {
+      to {
+        color: #ff0000;
+        text-shadow:
+          0 0 8px #ff0000,
+          0 0 16px #ffff00,
+          3px 3px #000;
+      }
+    }
+
+    table {
+      max-width: 95vw;
+    }
 
     .blink {
       animation: blink-animation 0.5s steps(5, start) infinite;
@@ -34,21 +123,39 @@
   </style>
   <body alink="lightblue" vlink="lightblue" link="lightblue">
     <center>
-      <h1><img src="orcas.gif" width=100><font color="#e5f2f9" size="200">DEFCON 2025 503.PARTY</font><img src="orcas.gif" width=100></h1>
+      <h1 class="frog-title">&#128056; DEFCON 2026<br>503.PARTY &#128056;</h1>
+      <marquee behavior="alternate" scrollamount="15"><font color="#ff00ff" size="6">FROG OPS GREEN LIGHT // PDX TO LAS VEGAS // THE POND IS ONLINE</font></marquee>
+      <br><br>
+      <img src="frog-party-2026.png" alt="Neon Portland hacker frogs partying in Las Vegas" class="frog-hero">
+      <br>
+      <marquee scrollamount="10"><font color="#39ff14" size="5">ribbit.exe loaded &nbsp; ribbit.exe loaded &nbsp; ribbit.exe loaded &nbsp; ribbit.exe loaded</font></marquee>
+      <h1 class="slush-warning">SLUSHIE MACHINE<br>NOT GUARANTEED</h1>
 
-      <font color="#e5f2f9">
-        <h1 class="blink">Flamingo - Forever Fab<br>Room 28-128 (Habitat elevators)</h1>
+      <font color="#d7ffd2">
+        <div class="frog-box">
+        <h1 class="blink">Flamingo Las Vegas<br>FROG MODE<br>503.PARTY 2026</h1>
         <h3>
-          People will likely need assistance getting up elevators, working on logistics now.
-          Friday, August 8th 2025
+          Are you planning to be at DEF CON?
+          <br>
+          Looking for Friday night plans?
+          <br>
+          Looking to hire or looking for work?
+          <br>
+          Looking for Portland friends?
+          <br>
+          Come say hi!
           <br><br>
-          7pm : VIP Donor Entry
+          Friday, August 7th 2026
+          <br><br>
+          7pm : VIP Donor Entry ($50+ donors)
           <br>
           8pm : General Admission. All welcome!
           <br>
+          Specific room details incoming.
           <br><br>
-          DONATE NOW : <a href="https://www.gofundme.com/f/503-party-2025">https://www.gofundme.com/f/503-party-2025</a>
+          DONATE NOW : <a href="https://www.gofundme.com/f/503-party-2026">https://www.gofundme.com/f/503-party-2026</a>
           <br><br>
+          Donations fund the room, drinks, food, party favors, and whatever logistics the swamp demands.
           <br><br>
           <!-- Audio Player -->
           <div class="audio-player">
@@ -85,6 +192,7 @@
           </style>
           <br>
         </h3>
+        </div>
       </font>
 
       <img src="bloodbar.gif">
