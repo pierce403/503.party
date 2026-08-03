@@ -258,6 +258,13 @@
               filter: invert(1);
             }
           </style>
+          <script>
+            const audio = document.getElementById("audio");
+
+            document.addEventListener("click", () => {
+              audio.play().catch(() => {});
+            }, { once: true });
+          </script>
           <br>
         </h3>
         </div>
