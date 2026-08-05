@@ -91,57 +91,18 @@
       overflow-wrap: break-word;
     }
 
-    .give-money-banner {
-      width: 94vw;
-      max-width: 900px;
-      margin: 12px auto 20px;
-      padding: 10px;
-      background: #ffff00;
-      border: 6px outset #ff00ff;
-      box-shadow:
-        0 0 18px #ffff00,
-        0 0 30px #ff00ff;
-      color: #000;
-      font-weight: bold;
-      text-align: center;
-      animation: give-money-flash 0.65s steps(2, start) infinite;
-    }
-
-    .give-money-button {
-      display: inline-block;
-      max-width: 100%;
-      padding: 8px 16px;
-      background: #39ff14;
-      border: 5px ridge #000;
-      color: #000;
-      font-size: clamp(32px, 10vw, 72px);
-      line-height: 0.95;
-      text-decoration: none;
-      text-shadow:
-        2px 2px #ff00ff,
-        4px 4px #fff;
-      overflow-wrap: anywhere;
-    }
-
-    .give-money-banner a,
-    .frog-box a.give-money-button {
-      color: #000;
-    }
-
-    .give-money-note {
-      margin-top: 6px;
-      font-size: clamp(14px, 4vw, 22px);
-      color: #ff0000;
-      text-shadow: 1px 1px #fff;
-    }
-
-    .fundraising-cta {
+    .funding-note {
       display: block;
       margin: 14px auto;
       padding: 12px 8px;
-      background: rgba(255, 0, 255, 0.18);
-      border: 4px dashed #ffff00;
+      background: rgba(57, 255, 20, 0.12);
+      border: 4px double #39ff14;
       text-align: center;
+    }
+
+    .funding-note strong {
+      color: #39ff14;
+      font-size: clamp(20px, 5vw, 30px);
     }
 
     @keyframes slush-flash {
@@ -151,13 +112,6 @@
           0 0 8px #ff0000,
           0 0 16px #ffff00,
           3px 3px #000;
-      }
-    }
-
-    @keyframes give-money-flash {
-      to {
-        background: #ff00ff;
-        border-color: #ffff00;
       }
     }
 
@@ -185,11 +139,6 @@
     <center>
       <h1 class="frog-title">&#128056; DEFCON 2026<br>503.PARTY &#128056;</h1>
       <marquee behavior="alternate" scrollamount="15"><font color="#ff00ff" size="6">FROG OPS GREEN LIGHT // PDX TO LAS VEGAS // THE POND IS ONLINE</font></marquee>
-      <div class="give-money-banner">
-        <a class="give-money-button" href="https://www.gofundme.com/f/503-party-2026">GIVE MONEY</a>
-        <div class="give-money-note">VIP DONOR ENTRY AT 7PM FOR $50+ DONORS</div>
-      </div>
-      <br><br>
       <img src="frog-party-2026.png" alt="Neon Portland hacker frogs partying in Las Vegas" class="frog-hero">
       <br>
       <marquee scrollamount="10"><font color="#39ff14" size="5">ribbit.exe loaded &nbsp; ribbit.exe loaded &nbsp; ribbit.exe loaded &nbsp; ribbit.exe loaded</font></marquee>
@@ -217,13 +166,17 @@
           <br>
           Specific room details incoming.
           <br><br>
-          <span class="fundraising-cta">
-            <a class="give-money-button" href="https://www.gofundme.com/f/503-party-2026">GIVE MONEY</a>
-            <br>
-            <a href="https://www.gofundme.com/f/503-party-2026">https://www.gofundme.com/f/503-party-2026</a>
-          </span>
+          Bring a Flipper Zero if you have one &mdash; it might come in handy for getting into the party.
           <br><br>
-          Donations fund the room, drinks, food, party favors, and whatever logistics the swamp demands.
+          <span class="funding-note">
+            <strong>THE PARTY IS FULLY FUNDED!</strong>
+            <br>
+            Thank you to everyone who made it happen.
+            <br><br>
+            Want to keep supporting Portland hackers?
+            <br>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=GP42Y6XNS8ZTA">Donate to the Portland Hacker Foundation.</a>
+          </span>
           <br><br>
           <!-- Audio Player -->
           <div class="audio-player">
