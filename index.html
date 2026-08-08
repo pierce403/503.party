@@ -28,15 +28,6 @@
       max-width: 100%;
     }
 
-    .frog-hero {
-      width: 95vw;
-      max-width: 980px;
-      border: 5px ridge #39ff14;
-      box-shadow:
-        0 0 22px #39ff14,
-        0 0 44px #ff00ff;
-    }
-
     .frog-box {
       width: 94vw;
       max-width: 900px;
@@ -74,6 +65,28 @@
       font-size: 16px;
       line-height: 1.25;
       overflow-wrap: break-word;
+    }
+
+    .room-info {
+      margin: 14px auto 20px;
+      padding: 14px 8px;
+      color: #ffff00;
+      background: rgba(255, 0, 255, 0.18);
+      border: 5px ridge #ffff00;
+      font-size: clamp(30px, 8vw, 54px);
+      font-weight: 900;
+      line-height: 1.05;
+      text-shadow:
+        0 0 8px #ffff00,
+        0 0 16px #ff00ff,
+        3px 3px #000;
+    }
+
+    .room-info small {
+      display: block;
+      margin-top: 8px;
+      font-size: 0.55em;
+      font-weight: 900;
     }
 
     .slush-warning {
@@ -139,14 +152,16 @@
     <center>
       <h1 class="frog-title">&#128056; DEFCON 2026<br>503.PARTY &#128056;</h1>
       <marquee behavior="alternate" scrollamount="15"><font color="#ff00ff" size="6">FROG OPS GREEN LIGHT // PDX TO LAS VEGAS // THE POND IS ONLINE</font></marquee>
-      <img src="frog-party-2026.png" alt="Neon Portland hacker frogs partying in Las Vegas" class="frog-hero">
-      <br>
       <marquee scrollamount="10"><font color="#39ff14" size="5">ribbit.exe loaded &nbsp; ribbit.exe loaded &nbsp; ribbit.exe loaded &nbsp; ribbit.exe loaded</font></marquee>
       <h1 class="slush-warning">SLUSHIE MACHINE<br>NOT GUARANTEED</h1>
 
       <font color="#d7ffd2">
         <div class="frog-box">
         <h1 class="blink">Flamingo Las Vegas<br>FROG MODE<br>503.PARTY 2026</h1>
+        <div class="room-info">
+          ROOM 23-159
+          <small>HABITAT ELEVATORS</small>
+        </div>
         <h3>
           Are you planning to be at DEF CON?
           <br>
@@ -163,8 +178,6 @@
           7pm : VIP Donor Entry ($50+ donors)
           <br>
           8pm : General Admission. All welcome!
-          <br>
-          Room 23-159 (Habitat elevators)
           <br><br>
           <span class="funding-note">
             <strong>THE PARTY IS FULLY FUNDED!</strong>
