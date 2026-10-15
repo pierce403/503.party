@@ -1,0 +1,18 @@
+{
+  "name": "503-party-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-site.mjs && node scripts/cloudflare-assets.mjs && node cloudflare/split-large-assets.mjs && node cloudflare/check-types.mjs",
+    "deploy": "wrangler deploy",
+    "test:hosting": "node cloudflare/verify-large-asset.mjs",
+    "check:deploy": "npm run build && wrangler deploy --dry-run"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "wrangler": "4.151.0",
+    "typescript": "5.9.3"
+  }
+}

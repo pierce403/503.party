@@ -1,0 +1,4 @@
+node_modules/
+dist/
+.wrangler/
+cloudflare/large-assets.generated.json
